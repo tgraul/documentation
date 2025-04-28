@@ -1,0 +1,200 @@
+{
+  "main": {
+    "id": "0d11d9cc9f874947",
+    "type": "split",
+    "children": [
+      {
+        "id": "49e097ba2de90417",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "96f892dfe9c66b6b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "400 CI_CD & Automation/410 Terraform.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "410 Terraform"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "78c477d2a489862b",
+    "type": "split",
+    "children": [
+      {
+        "id": "5a5cc6075847af94",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f28f5c7933eb037f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "56ce0cd62e7ccdbb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "ad548deae5f9c583",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "897b1a526e9c81c4",
+    "type": "split",
+    "children": [
+      {
+        "id": "b3f1464d485b0556",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "159eaacc50115615",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "400 CI_CD & Automation/410 Terraform.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 410 Terraform"
+            }
+          },
+          {
+            "id": "a2b9927cbfdee7db",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "400 CI_CD & Automation/410 Terraform.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 410 Terraform"
+            }
+          },
+          {
+            "id": "a64b19e4b272acf3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "c09c906a33a9fc10",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "400 CI_CD & Automation/410 Terraform.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 410 Terraform"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "96f892dfe9c66b6b",
+  "lastOpenFiles": [
+    "600 Security/660 fail2ban.md",
+    "600 Security/000 Security MOC.md",
+    "800 Tooling/810 Ansible.md",
+    "800 Tooling/000 Tooling MOC.md",
+    "index.md",
+    "README.md",
+    "Welcome.md",
+    "001 Dashboards/000 Home.md",
+    "300 Container & Orchestrierung/300 Docker.md",
+    "300 Container & Orchestrierung/000 Container MOC.md",
+    "100 Infrastruktur/000 Infrastruktur MOC.md",
+    "000 Inbox/000 Inbox.md",
+    "400 CI_CD & Automation/410 Terraform.md",
+    "300 Container & Orchestrierung/310 Kubernetes.md",
+    "200 Betriebssysteme/210 Linux Basics.md",
+    "900 Referenzen/Vorlagen/Technologie-Dokumentation.md",
+    "900 Referenzen/Vorlagen",
+    "900 Referenzen",
+    "800 Tooling",
+    "700 Datenbanken",
+    "600 Security",
+    "500 Monitoring & Logging",
+    "400 CI_CD & Automation",
+    "300 Container & Orchestrierung",
+    "200 Betriebssysteme",
+    "100 Infrastruktur"
+  ]
+}

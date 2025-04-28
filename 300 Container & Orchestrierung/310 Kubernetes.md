@@ -1,9 +1,19 @@
+---
+tags: [kubernetes, container, orchestrierung]
+erstelldatum: 2025-04-28
+aktualisiert: 2025-04-28
+verwandte_technologien: [docker, helm]
+---
+
 # Kubernetes
 
 Tags: #tool #container #orchestrierung
 
 ## Überblick
 Kubernetes ist eine Open-Source-Plattform zur Automatisierung, Skalierung und Verwaltung von containerisierten Anwendungen. Es gruppiert Container zu logischen Einheiten für einfache Verwaltung und Discovery.
+
+> [!NOTE]
+> Kubernetes wird oft als "k8s" abgekürzt (8 Buchstaben zwischen k und s).
 
 ## Installationsschritte
 ### Minikube (lokale Entwicklung)
@@ -66,12 +76,18 @@ kubectl exec -it <pod-name> -- /bin/bash # Shell in Pod öffnen
 - Secrets für sensible Daten verwenden
 - Namespaces zur logischen Trennung verwenden
 
+> [!TIP]
+> Verwende `kubectl explain` um die Struktur von Kubernetes-Ressourcen zu verstehen, z.B. `kubectl explain deployment.spec`
+
 ## Häufige Probleme und Lösungen
 - **ImagePullBackOff**: Image nicht gefunden oder Zugriffsrechte fehlen
 - **CrashLoopBackOff**: Container startet und crasht wiederholt
 - **Pending Pods**: Ressourcenmangel oder Node-Affinity-Probleme
 - **Evicted Pods**: Ressourcenmangel auf dem Node
 - **Connection Refused**: Service/Netzwerkprobleme
+
+> [!WARNING]
+> Sei vorsichtig mit `kubectl delete` ohne Namespace-Angabe, da es alle Ressourcen in allen Namespaces löschen kann!
 
 ## Sicherheitshinweise
 - Immer RBAC für Zugriffssteuerung verwenden

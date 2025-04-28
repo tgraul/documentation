@@ -29,4 +29,4 @@ Für neue Notizen ist der schnellste Weg:
 
 ---
 
-Zuletzt aktualisiert: {{date:YYYY-MM-DD}} 
+Zuletzt aktualisiert: 2025-04-28 

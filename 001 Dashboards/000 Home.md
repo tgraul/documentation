@@ -1,5 +1,8 @@
 # 🏠 Home Dashboard
 
+> [!note] Willkommen in deiner DevOps-Wissensdatenbank
+> Hier findest du alle wichtigen Informationen, Anleitungen und Ressourcen zu DevOps und Systemadministration.
+
 ## Schnellzugriff
 - [[100 Infrastruktur/000 Infrastruktur MOC|🖥️ Infrastruktur]]
 - [[200 Betriebssysteme/000 Betriebssysteme MOC|💻 Betriebssysteme]]
@@ -10,6 +13,19 @@
 - [[700 Datenbanken/000 Datenbanken MOC|💾 Datenbanken]]
 - [[800 Tooling/000 Tooling MOC|🧰 Tooling]]
 - [[950 Praxis-Projekte/000 Projekte MOC|🚀 Projekte]]
+
+## 📅 Kalender
+```dataviewjs
+// Kalender-Integration mit dem calendar-Plugin
+const calendarData = {
+  year: new Date().getFullYear(),
+  month: new Date().getMonth(),
+  holidays: [],
+  entries: [],
+};
+
+dv.calendar(calendarData);
+```
 
 ## Aktuelle Projekte
 ```dataview
@@ -26,6 +42,14 @@ TABLE file.mtime as "Aktualisiert", tags
 FROM "100 Infrastruktur" OR "200 Betriebssysteme" OR "300 Container & Orchestrierung" OR "400 CI_CD & Automation" OR "500 Monitoring & Logging" OR "600 Security" OR "700 Datenbanken" OR "800 Tooling"
 SORT file.mtime DESC
 LIMIT 8
+```
+
+## 📝 Dokumentenstatistik
+```dataview
+TABLE length(rows) as "Anzahl Dokumente"
+FROM -"900 Referenzen" AND -"000 Inbox" AND -"001 Dashboards" AND -"850 Skripte"
+GROUP BY SUBSTRING(file.folder, 0, 3) as "Bereich"
+SORT Bereich ASC
 ```
 
 ## Offene Aufgaben
@@ -54,4 +78,7 @@ LIMIT 10
 - [[900 Referenzen/Checklisten/Server Hardening|Server-Hardening-Checkliste]]
 - [[900 Referenzen/Checklisten/Kubernetes Deployment|Kubernetes-Deployment-Checkliste]]
 - [[900 Referenzen/Vorlagen/Technologie-Dokumentation|Technologie-Dokumentation]]
-- [[900 Referenzen/Vorlagen/Projekt-Dokumentation|Projekt-Dokumentation]] 
+- [[900 Referenzen/Vorlagen/Projekt-Dokumentation|Projekt-Dokumentation]]
+
+> [!tip] Tipp zur Nutzung
+> Nutze `Ctrl+E` oder die QuickAdd-Befehle, um schnell neue Einträge zu erstellen. 

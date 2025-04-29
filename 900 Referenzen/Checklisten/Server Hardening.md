@@ -1,13 +1,17 @@
 ---
 tags: [security, linux, hardening, checkliste]
 erstelldatum: 2025-04-28
-aktualisiert: 2025-04-28
+aktualisiert: <% tp.date.now("YYYY-MM-DD") %>
+status: in_progress
 ---
 
 # Server Hardening Checkliste
 
-> [!INFO]
+> [!info] Anleitung
 > Diese Checkliste dient zur Absicherung neuer Linux-Server. Passe sie an deine spezifischen Anforderungen an.
+
+> [!danger] Sicherheitshinweis
+> Stelle sicher, dass du vor allen Änderungen ein Backup oder Snapshot des Systems erstellt hast und Zugriff für den Notfall sichergestellt ist.
 
 ## 📋 Initiale Einrichtung
 
@@ -78,7 +82,50 @@ aktualisiert: 2025-04-28
 - [ ] SSH-Zugriff verifizieren
 - [ ] Notfall-Wiederherstellung testen
 
+## 📊 Fortschritt
+
+```dataviewjs
+// Zähle die erledigten Aufgaben dieser Checkliste
+const page = dv.current();
+const tasks = dv.current().file.tasks;
+const completedTasks = tasks.where(t => t.completed);
+const totalTasks = tasks.length;
+const percentComplete = totalTasks > 0 ? Math.round((completedTasks.length / totalTasks) * 100) : 0;
+
+dv.paragraph(`Fortschritt: ${completedTasks.length}/${totalTasks} (${percentComplete}%)`);
+
+// Erstelle eine einfache Fortschrittsleiste
+const progressBar = "🟩".repeat(Math.floor(percentComplete/10)) + "⬜".repeat(10 - Math.floor(percentComplete/10));
+dv.paragraph(progressBar);
+```
+
+## ⚙️ Beispiel-Konfigurationen
+
+> [!example] SSH-Konfiguration
+> ```bash
+> # /etc/ssh/sshd_config
+> PermitRootLogin no
+> PasswordAuthentication no
+> PubkeyAuthentication yes
+> PermitEmptyPasswords no
+> X11Forwarding no
+> MaxAuthTries 3
+> ```
+
+> [!example] Firewall-Konfiguration (UFW)
+> ```bash
+> # UFW-Grundkonfiguration
+> ufw default deny incoming
+> ufw default allow outgoing
+> ufw allow 22/tcp comment 'SSH'
+> ufw enable
+> ```
+
 ## Verwandte Themen
 - [[600 Security/610 Linux-Härtung|Linux-Härtung]]
 - [[600 Security/660 fail2ban|fail2ban]]
-- [[200 Betriebssysteme/211 Linux Firewall|Linux Firewall]] 
+- [[200 Betriebssysteme/211 Linux Firewall|Linux Firewall]]
+
+---
+
+Zuletzt aktualisiert: <% tp.date.now("YYYY-MM-DD") %> 

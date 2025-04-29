@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "400 CI_CD & Automation/410 Terraform.md",
+                "file": "600 Security/614 Cloud Security.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "410 Terraform"
+              "title": "614 Cloud Security"
             }
           }
         ]
@@ -170,21 +170,28 @@
   },
   "active": "96f892dfe9c66b6b",
   "lastOpenFiles": [
+    "600 Security/671 Incident Response.md",
     "600 Security/660 fail2ban.md",
+    "600 Security/655 Threat Intelligence.md",
+    "600 Security/642 ISO27001.md",
+    "600 Security/641 DSGVO.md",
+    "200 Betriebssysteme/210 Linux Basics.md",
+    "100 Infrastruktur/000 Infrastruktur MOC.md",
+    "300 Container & Orchestrierung/000 Container MOC.md",
+    "300 Container & Orchestrierung/300 Docker.md",
+    "400 CI_CD & Automation/410 Terraform.md",
+    "950 Praxis-Projekte/000 Projekte MOC.md",
+    "040 DB Migration.md",
+    "950 Praxis-Projekte/001 K8s Cluster Setup.md",
+    "index.md",
     "600 Security/000 Security MOC.md",
     "800 Tooling/810 Ansible.md",
     "800 Tooling/000 Tooling MOC.md",
-    "index.md",
     "README.md",
     "Welcome.md",
     "001 Dashboards/000 Home.md",
-    "300 Container & Orchestrierung/300 Docker.md",
-    "300 Container & Orchestrierung/000 Container MOC.md",
-    "100 Infrastruktur/000 Infrastruktur MOC.md",
     "000 Inbox/000 Inbox.md",
-    "400 CI_CD & Automation/410 Terraform.md",
     "300 Container & Orchestrierung/310 Kubernetes.md",
-    "200 Betriebssysteme/210 Linux Basics.md",
     "900 Referenzen/Vorlagen/Technologie-Dokumentation.md",
     "900 Referenzen/Vorlagen",
     "900 Referenzen",

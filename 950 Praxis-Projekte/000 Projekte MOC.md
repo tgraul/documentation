@@ -2,6 +2,26 @@
 
 Diese Sektion enthält konkrete Implementierungen, Projekte und Anwendungsfälle für verschiedene Technologien und Tools.
 
+## Projekt-Dashboard
+
+> [!info] Projektübersicht
+> Hier findest du alle laufenden und geplanten Projekte nach Bereichen sortiert.
+
+```dataview
+TABLE
+  file.ctime as "Erstellt",
+  file.mtime as "Aktualisiert",
+  choice(contains(file.tags, "active"), "✅", "❌") as "Aktiv",
+  choice(contains(file.tags, "completed"), "✅", "❌") as "Abgeschlossen"
+FROM "950 Praxis-Projekte"
+WHERE !contains(file.name, "MOC") AND !contains(file.name, "Kanban")
+SORT contains(file.tags, "active") DESC, file.mtime DESC
+```
+
+## Projekt-Kanban
+
+![[950 Praxis-Projekte/Projekte Kanban]]
+
 ## Infrastrukturprojekte
 - [[001 K8s Cluster Setup|Kubernetes-Cluster Aufbau mit kubeadm]]
 - [[002 AWS EKS Migration|Migration zu AWS EKS]]

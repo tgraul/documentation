@@ -1,43 +1,84 @@
-# {{Name der Technologie}}
+---
+tags: [tool, documentation, template]
+erstelldatum: <% tp.date.now("YYYY-MM-DD") %>
+aktualisiert: <% tp.date.now("YYYY-MM-DD") %>
+---
 
-Tags: #tool #documentation
+# <% tp.file.title %>
 
-## Überblick
-<!-- Kurze Beschreibung der Technologie und ihres Hauptzwecks -->
+> [!info] Überblick
+> <!-- Kurze Beschreibung der Technologie und ihres Hauptzwecks -->
+
+**Version**: <!-- Aktuelle Version der Software -->
+**Website**: [Offizielle Website](<!-- URL -->)
+**GitHub**: [Repository](<!-- GitHub-URL -->)
 
 ## Installationsschritte
-<!-- Wie man die Software installiert -->
+
+> [!example] Installation
+> Schritt-für-Schritt Anleitung zur Installation
+
 ```bash
 # Installationsbefehl
 ```
 
 ## Grundlegende Konfiguration
-<!-- Beispielkonfiguration und wichtige Konfigurationsparameter -->
+
+> [!note] Konfiguration
+> Wichtige Konfigurationsparameter und deren Bedeutung
+
 ```yaml
 # Beispiel-Konfigurationsdatei
 ```
 
 ## Wichtige Befehle
-<!-- Die wichtigsten Befehle für den täglichen Gebrauch -->
+
+> [!tip] Häufig verwendete Befehle
+> Die wichtigsten Befehle für den täglichen Gebrauch
+
 ```bash
 # Befehl 1
 # Befehl 2
 ```
 
 ## Best Practices
-<!-- Empfohlene Vorgehensweisen und Tipps -->
+
+> [!success] Best Practices
+> Empfohlene Vorgehensweisen und Tipps
 
 ## Häufige Probleme und Lösungen
-<!-- Troubleshooting-Tipps -->
+
+> [!warning] Troubleshooting
+> Bekannte Probleme und deren Lösungen
 
 ## Sicherheitshinweise
-<!-- Sicherheitsrelevante Aspekte -->
+
+> [!danger] Sicherheitsaspekte
+> Sicherheitsrelevante Aspekte und Empfehlungen
 
 ## Monitoring & Logging
-<!-- Wie man die Technologie überwacht -->
+
+> [!abstract] Monitoring
+> Wie man die Technologie überwacht und welche Metriken wichtig sind
+
+```yaml
+# Monitoring-Konfigurationsbeispiel
+```
 
 ## Nützliche Links
-<!-- Offizielle Dokumentation, hilfreiche Artikel, etc. -->
+
+> [!link] Ressourcen
+> Weitere Informationsquellen
+
+- [Offizielle Dokumentation](<!-- URL -->)
+- [Tutorial](<!-- URL -->)
+- [Community-Forum](<!-- URL -->)
 
 ## Notizen
-<!-- Eigene Erfahrungen und Anmerkungen --> 
+
+> [!quote] Persönliche Erfahrungen
+> Eigene Erfahrungen, Anmerkungen und Hinweise für künftige Verwendung
+
+---
+
+Zuletzt bearbeitet: <% tp.date.now("YYYY-MM-DD") %> 

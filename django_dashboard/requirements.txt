@@ -1,6 +1,0 @@
-Django>=4.2.7
-python-markdown>=3.5.1
-python-frontmatter>=1.0.0
-django-bootstrap5>=23.3
-whitenoise>=6.6.0
-gunicorn>=21.2.0 
